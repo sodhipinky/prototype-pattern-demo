@@ -11,5 +11,9 @@ public class Main {
     public static void main(String[] args) {
         // Create an original Orc instance
         Orc originalOrc = new Orc("Axe"); // Original Orc with an Axe
+
+        // Clone the original object multiple times
+        Orc clonedOrc1 = (Orc) originalOrc.clone();
+        Orc clonedOrc2 = (Orc) originalOrc.clone();
     }
 }
