@@ -22,8 +22,13 @@ public class Main {
         System.out.println("Cloned Orc 2 Weapon: " + clonedOrc2.getWeapon());
 
         // Call methods on the cloned objects
+        System.out.print("Orc 1 Attacks...");
         clonedOrc1.attack();
+
+        System.out.print("Orc 2 Defends...");
         clonedOrc2.defend();
+
+        System.out.print("Orc 1 Flees...");
         clonedOrc1.flee();
 
         // Show that cloned objects are separate instances
