@@ -17,4 +17,32 @@ public class Orc implements Enemy {
         this.attackPower = attackPower;
         this.defensePower = defensePower;
     }
+
+    public String getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(String weapon) {
+        this.weapon = weapon;
+    }
+
+    public int getAttackPower() {
+        return attackPower;
+    }
+
+    public void setAttackPower(int attackPower) {
+        this.attackPower = attackPower;
+    }
+
+    public int getDefensePower() {
+        return defensePower;
+    }
+
+    public void setDefensePower(int defensePower) {
+        this.defensePower = defensePower;
+    }
+
+    public int getHealth() {
+        return health;
+    }
 }
