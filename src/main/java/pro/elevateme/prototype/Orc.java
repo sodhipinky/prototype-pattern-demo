@@ -76,6 +76,13 @@ public class Orc implements Enemy {
 
     @Override
     public void flee() {
-
+        // Implementation of flee logic
+        System.out.println("Orc flees from battle!");
+        // Reduce health when fleeing
+        health -= 20;
+        if (health < 0) {
+            health = 0;
+        }
+        System.out.println("Orc's health is now: " + health);
     }
 }
