@@ -60,7 +60,8 @@ public class Orc implements Enemy {
 
     @Override
     public void attack() {
-
+        // Implementation of attack logic
+        System.out.println("Orc attacks with " + weapon + " for " + attackPower + " damage!");
     }
 
     @Override
