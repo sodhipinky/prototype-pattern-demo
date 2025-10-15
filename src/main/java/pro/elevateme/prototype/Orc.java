@@ -45,4 +45,24 @@ public class Orc implements Enemy {
     public int getHealth() {
         return health;
     }
+
+    @Override
+    public Enemy clone() {
+        return null;
+    }
+
+    @Override
+    public void attack() {
+
+    }
+
+    @Override
+    public void defend() {
+
+    }
+
+    @Override
+    public void flee() {
+
+    }
 }
