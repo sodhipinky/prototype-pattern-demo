@@ -1,4 +1,4 @@
-package pro.elevateme;
+package pro.elevateme.prototype;
 
 // Step 1: Create the 'Enemy' interface and make it 'Cloneable'
 // Extend the 'Cloneable' interface to indicate that we want to allow cloning
