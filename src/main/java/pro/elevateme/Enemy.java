@@ -1,6 +1,7 @@
 package pro.elevateme;
 
-// We must extend the 'Cloneable' interface to indicate that we want to allow cloning
+// Step 1: Create the 'Enemy' interface and make it 'Cloneable'
+// Extend the 'Cloneable' interface to indicate that we want to allow cloning
 // 'Cloneable' is a marker interface, it does not contain any methods
 public interface Enemy extends Cloneable {
 
