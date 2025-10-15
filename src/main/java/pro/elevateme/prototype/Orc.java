@@ -48,7 +48,14 @@ public class Orc implements Enemy {
 
     @Override
     public Enemy clone() {
-        return null;
+        try {
+            // Call Object's clone() method to create a shallow copy
+            return (Enemy) super.clone();
+        } catch (CloneNotSupportedException exception) {
+            // If clone could not be performed, wrap it in a RuntimeException
+            // This should not happen since we are Cloneable
+            throw new RuntimeException("Cloning not supported for Orc", exception);
+        }
     }
 
     @Override
