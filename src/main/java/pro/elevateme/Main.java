@@ -20,5 +20,16 @@ public class Main {
         System.out.println("Original Orc Weapon: " + originalOrc.getWeapon());
         System.out.println("Cloned Orc 1 Weapon: " + clonedOrc1.getWeapon());
         System.out.println("Cloned Orc 2 Weapon: " + clonedOrc2.getWeapon());
+
+        // Call methods on the cloned objects
+        clonedOrc1.attack();
+        clonedOrc2.defend();
+        clonedOrc1.flee();
+
+        // Show that cloned objects are separate instances
+        System.out.println("Are original and clonedOrc1 the same instance? " +
+                (originalOrc == clonedOrc1));   // Should be false
+        System.out.println("Are clonedOrc1 and clonedOrc2 the same instance? " +
+                (clonedOrc1 == clonedOrc2));    // Should be false
     }
 }
