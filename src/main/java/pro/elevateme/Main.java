@@ -15,5 +15,10 @@ public class Main {
         // Clone the original object multiple times
         Orc clonedOrc1 = (Orc) originalOrc.clone();
         Orc clonedOrc2 = (Orc) originalOrc.clone();
+
+        // Display the details of the original and cloned Orcs
+        System.out.println("Original Orc Weapon: " + originalOrc.getWeapon());
+        System.out.println("Cloned Orc 1 Weapon: " + clonedOrc1.getWeapon());
+        System.out.println("Cloned Orc 2 Weapon: " + clonedOrc2.getWeapon());
     }
 }
