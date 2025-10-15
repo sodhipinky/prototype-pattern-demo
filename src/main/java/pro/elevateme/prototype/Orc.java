@@ -11,4 +11,10 @@ public class Orc implements Enemy {
     private String weapon;
     private int attackPower;
     private int defensePower;
+
+    public Orc(String weapon, int attackPower, int defensePower) {
+        this.weapon = weapon;
+        this.attackPower = attackPower;
+        this.defensePower = defensePower;
+    }
 }
