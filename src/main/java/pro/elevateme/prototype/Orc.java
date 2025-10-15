@@ -8,14 +8,12 @@ package pro.elevateme.prototype;
 public class Orc implements Enemy {
 
     private int health = 100;
+    private int defensePower = 50;
+    private int attackPower = 75;
     private String weapon;
-    private int attackPower;
-    private int defensePower;
 
-    public Orc(String weapon, int attackPower, int defensePower) {
+    public Orc(String weapon) {
         this.weapon = weapon;
-        this.attackPower = attackPower;
-        this.defensePower = defensePower;
     }
 
     public String getWeapon() {
@@ -66,7 +64,14 @@ public class Orc implements Enemy {
 
     @Override
     public void defend() {
-
+        // Implementation of defend logic
+        System.out.println("Orc defends with " + defensePower + " defense power!");
+        // Reduce health based on defense power
+        health -= defensePower / 10;
+        if (health < 0) {
+            health = 0;
+        }
+        System.out.println("Orc's health is now: " + health);
     }
 
     @Override
